@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="menu_ingredients">Ingredients</string>
+    <string name="menu_prep">How to Prepare</string>
+    <string name="menu_search">Search</string>
+    <string name="ingredient_title">Category Name</string>
+    <string name="ingredient_name">Ingredient</string>
+</resources>
