@@ -15,10 +15,9 @@
             app:showAsAction="never"
             />
         <item
-            android:title="@string/menu_ingredients"
             android:id="@+id/idActivity2"
-            app:showAsAction="never"
-            />
+            android:title="@string/menu_shopping"
+            app:showAsAction="never" />
         <item
             android:title="@string/menu_prep"
             android:id="@+id/idActivity3"

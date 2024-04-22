@@ -14,13 +14,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.083" />
+        app:layout_constraintVertical_bias="0.083"
+        android:contentDescription="@string/dillDumpling_img_alt" />
 
     <TextView
         android:id="@+id/idRecipeName"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="38dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="48dp"
         android:text=""
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,31 +33,9 @@
         android:id="@+id/idRecipeTime"
         android:layout_width="100dp"
         android:layout_height="38dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="2dp"
         android:text=""
         app:layout_constraintStart_toStartOf="@+id/idRecipeName"
         app:layout_constraintTop_toBottomOf="@+id/idRecipeName" />
 
-    <Button
-        android:id="@+id/idIngredientBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="48dp"
-        android:text="@string/menu_ingredients"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/idRecipeName"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/idPrepBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/menu_prep"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/idRecipeTime"
-        app:layout_constraintTop_toBottomOf="@+id/idIngredientBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

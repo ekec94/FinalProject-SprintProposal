@@ -2,11 +2,11 @@
     <string name="app_name">FinalProject</string>
     <!--Menu Items-->
     <string name="menu_filter">Filter Recipes</string>
-    <string name="menu_ingredients">Ingredients</string>
+    <string name="menu_shopping">Shopping List</string>
     <string name="menu_prep">How to Prepare</string>
     <string name="menu_search">Search</string>
 
-    <string name="ingredient_name">Ingredient</string>
+    <string name="ingredient_name">Ingredients</string>
     <!--Filter-->
     <string name="protein_txt">Pick your protein:</string>
     <string name="beef_RD_txt">Beef</string>
@@ -24,4 +24,7 @@
     <string name="calorie_txt">Would you like a low-calorie recipe?</string>
     <string name="calorie_yes">Yes</string>
     <string name="calorie_no">No</string>
+
+    <string name="filter_btn_txt">Filter Recipes</string>
+    <string name="dillDumpling_img_alt">Servings of the Dill and Dumpling soup</string>
 </resources>
