@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity4">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idToolbar"
+        android:layout_width="410dp"
+        android:layout_height="87dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+        />
+
+    <TextView
+        android:id="@+id/idProteinTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/protein_txt"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idToolbar" />
+
+    <RadioGroup
+        android:id="@+id/idProteinGroup"
+        android:layout_width="223dp"
+        android:layout_height="200dp"
+        android:checkedButton="@id/idProteinNoneRB"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idProteinTV"
+        app:layout_constraintTop_toBottomOf="@+id/idToolbar">
+
+        <RadioButton
+            android:id="@+id/idProteinBeefRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/beef_RD_txt" />
+
+        <RadioButton
+            android:id="@+id/idProteinChickenRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chick_RD_txt" />
+
+        <RadioButton
+            android:id="@+id/idProteinFishRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fish_RD_txt" />
+
+        <RadioButton
+            android:id="@+id/idProteinNoneRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/none_txt" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/idAdditionalTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:text="@string/addition_txt"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idProteinTV" />
+
+    <RadioGroup
+        android:id="@+id/idCarbGroup"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:checkedButton="@id/idCarbNoneRB"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idAdditionalTV">
+
+        <RadioButton
+            android:id="@+id/idCarbNoneRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/none_txt" />
+
+        <RadioButton
+            android:id="@+id/idCarbNoodlesRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/carb_noodles" />
+
+        <RadioButton
+            android:id="@+id/idCarbRiceRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/carb_rice" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/idTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/time_text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idCarbGroup" />
+
+    <EditText
+        android:id="@+id/idTimeEV"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/time_hint"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTimeTV" />
+
+    <TextView
+        android:id="@+id/idCalorieTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/calorie_txt"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTimeEV" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/idCalorieSW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:checked="false"
+        android:focusable="true"
+        android:showText="true"
+        android:textOff="@string/calorie_no"
+        android:textOn="@string/calorie_yes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idCalorieTV"
+        app:layout_constraintTop_toBottomOf="@+id/idTimeEV"
+        tools:checked="false" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
