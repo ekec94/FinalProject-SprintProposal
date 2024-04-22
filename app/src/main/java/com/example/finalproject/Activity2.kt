@@ -20,12 +20,18 @@ class Activity2 : AppCompatActivity() {
         // allow the user to return to main activity
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
+        val ingredients: List<String> = listOf(
+            "One Ingredient", "Two Ingredient", "Three Ingredient", "Four Ingredient", "Five Ingredient"
+        )
         val ingredientView = findViewById<ListView>(R.id.idIngredientList)
         val ingredientList = ArrayList<IngredientListModel>()
 
         // current state for testing
-        // will need to restructure since there will be more than one ingredient to add
-        ingredientList.add(IngredientListModel("Testing Ingredient"))
+        // will need to get ingredients from recipe class which is TBA
+
+        for(ingredient in ingredients) {
+            ingredientList.add(IngredientListModel(ingredient))
+        }
         ingredientView.adapter = IngredientListAdapter(
             this, R.layout.ingredient_list_item,ingredientList
         )

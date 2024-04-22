@@ -6,7 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.custlistviewproject.RecipeListModel
+import com.example.finalproject.models.RecipeListModel
 import com.example.custlistviewproject.RecipeListAdapter
 
 // allows all functions to access the recipe list
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         // add items to list
         // currently testing -- everytime the back button is used it adds the item again
         recipeList.clear() // current fix -- subject to change?
-        recipeList.add(RecipeListModel("Test Name", "1h 45m", R.drawable.ic_launcher_background))
+        recipeList.add(RecipeListModel("Test Name",  "90m", R.drawable.ic_launcher_background))
 
 
 
@@ -54,6 +54,12 @@ class MainActivity : AppCompatActivity() {
 
         R.id.idActivity3 -> {
             val intent = Intent(this, Activity3::class.java)
+            startActivity(intent)
+            true
+        }
+
+        R.id.idActivity4 -> {
+            val intent = Intent(this, Activity4::class.java)
             startActivity(intent)
             true
         }

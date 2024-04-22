@@ -1,4 +1,4 @@
-package com.example.custlistviewproject
+package com.example.finalproject.models
 
 data class RecipeListModel(
     val recipeName: String,

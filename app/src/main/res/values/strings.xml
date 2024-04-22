@@ -1,8 +1,27 @@
 <resources>
     <string name="app_name">FinalProject</string>
+    <!--Menu Items-->
+    <string name="menu_filter">Filter Recipes</string>
     <string name="menu_ingredients">Ingredients</string>
     <string name="menu_prep">How to Prepare</string>
     <string name="menu_search">Search</string>
-    <string name="ingredient_title">Category Name</string>
+
     <string name="ingredient_name">Ingredient</string>
+    <!--Filter-->
+    <string name="protein_txt">Pick your protein:</string>
+    <string name="beef_RD_txt">Beef</string>
+    <string name="chick_RD_txt">Chicken</string>
+    <string name="fish_RD_txt">Fish</string>
+    <string name="none_txt">N/A</string>
+
+    <string name="addition_txt">Additional Ingredient:</string>
+    <string name="carb_noodles">Noodles</string>
+    <string name="carb_rice">Rice</string>
+
+    <string name="time_text">How much time do you have?</string>
+    <string name="time_hint">Time in Minutes</string>
+
+    <string name="calorie_txt">Would you like a low-calorie recipe?</string>
+    <string name="calorie_yes">Yes</string>
+    <string name="calorie_no">No</string>
 </resources>

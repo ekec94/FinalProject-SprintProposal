@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.finalproject.R
+import com.example.finalproject.models.RecipeListModel
 
 class RecipeListAdapter(val ctx: Context, val ourResource: Int,
                       val items: ArrayList<RecipeListModel>): ArrayAdapter<RecipeListModel>(ctx,ourResource,items) {

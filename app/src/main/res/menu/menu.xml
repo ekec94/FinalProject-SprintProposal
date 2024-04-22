@@ -10,6 +10,11 @@
         app:showAsAction="ifRoom|collapseActionView" />
     <group>
         <item
+            android:title="@string/menu_filter"
+            android:id="@+id/idActivity4"
+            app:showAsAction="never"
+            />
+        <item
             android:title="@string/menu_ingredients"
             android:id="@+id/idActivity2"
             app:showAsAction="never"

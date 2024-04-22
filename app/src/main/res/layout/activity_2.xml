@@ -29,20 +29,6 @@
         android:layout_height="642dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idCategoryTitle" />
-
-    <TextView
-        android:id="@+id/idCategoryTitle"
-        android:layout_width="321dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="64dp"
-        android:gravity="bottom"
-        android:text="@string/ingredient_title"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idToolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

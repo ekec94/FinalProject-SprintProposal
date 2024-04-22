@@ -1,7 +1,10 @@
 package com.example.finalproject
 
 import android.os.Bundle
+import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.finalproject.adapter.IngredientListAdapter
+import com.example.finalproject.models.IngredientListModel
 
 class Activity3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,5 +18,21 @@ class Activity3 : AppCompatActivity() {
         supportActionBar!!.title = "How to Prepare"
         // allow the user to return to main activity
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
+        val ingredients: List<String> = listOf(
+            "One Ingredient", "Two Ingredient", "Three Ingredient", "Four Ingredient", "Five Ingredient"
+        )
+        val ingredientView = findViewById<ListView>(R.id.idIngredientLV)
+        val ingredientList = ArrayList<IngredientListModel>()
+
+        // current state for testing
+        // will need to get ingredients from recipe class which is TBA
+
+        for(ingredient in ingredients) {
+            ingredientList.add(IngredientListModel(ingredient))
+        }
+        ingredientView.adapter = IngredientListAdapter(
+            this, R.layout.ingredient_list_item,ingredientList
+        )
     }
 }
