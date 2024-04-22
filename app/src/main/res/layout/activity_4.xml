@@ -23,28 +23,28 @@
 
         />
 
-    <TextView
-        android:id="@+id/idProteinTV"
-        android:layout_width="wrap_content"
+    <CheckedTextView
+        android:id="@+id/idProteinChTV"
+        android:layout_width="372dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/protein_txt"
         android:textSize="20sp"
+        android:checkMark="?android:attr/textCheckMark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idToolbar" />
 
     <RadioGroup
         android:id="@+id/idProteinGroup"
-        android:layout_width="223dp"
+        android:layout_width="372dp"
         android:layout_height="200dp"
-        android:checkedButton="@id/idProteinNoneRB"
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/idProteinTV"
-        app:layout_constraintTop_toBottomOf="@+id/idToolbar">
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idProteinChTV">
 
         <RadioButton
             android:id="@+id/idProteinBeefRB"
@@ -65,42 +65,37 @@
             android:text="@string/fish_RD_txt" />
 
         <RadioButton
-            android:id="@+id/idProteinNoneRB"
+            android:id="@+id/idProteinPorkRB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/none_txt" />
+            android:text="@string/pork_RD_txt" />
+
     </RadioGroup>
 
-    <TextView
-        android:id="@+id/idAdditionalTV"
-        android:layout_width="wrap_content"
+    <CheckedTextView
+        android:id="@+id/idAdditionalChTV"
+        android:layout_width="372dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="212dp"
         android:text="@string/addition_txt"
         android:textSize="20sp"
+        android:checkMark="?android:attr/textCheckMark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idProteinTV" />
+        app:layout_constraintTop_toBottomOf="@+id/idProteinChTV" />
 
     <RadioGroup
         android:id="@+id/idCarbGroup"
         android:layout_width="340dp"
         android:layout_height="50dp"
-        android:checkedButton="@id/idCarbNoneRB"
+        android:layout_marginTop="12dp"
         android:clickable="true"
         android:focusable="true"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idAdditionalTV">
-
-        <RadioButton
-            android:id="@+id/idCarbNoneRB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/none_txt" />
+        app:layout_constraintTop_toBottomOf="@+id/idAdditionalChTV">
 
         <RadioButton
             android:id="@+id/idCarbNoodlesRB"
@@ -125,7 +120,6 @@
         android:text="@string/time_text"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idCarbGroup" />
 
@@ -139,7 +133,6 @@
         android:hint="@string/time_hint"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idTimeTV" />
 
@@ -161,14 +154,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:checked="false"
         android:focusable="true"
-        android:showText="true"
         android:textOff="@string/calorie_no"
         android:textOn="@string/calorie_yes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/idCalorieTV"
-        app:layout_constraintTop_toBottomOf="@+id/idTimeEV"
-        tools:checked="false" />
+        app:layout_constraintTop_toBottomOf="@+id/idTimeEV" />
+
+    <Button
+        android:id="@+id/idFilterBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="@string/filter_btn_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idCalorieTV" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

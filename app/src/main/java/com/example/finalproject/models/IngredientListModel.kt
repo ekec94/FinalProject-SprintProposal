@@ -1,5 +1,5 @@
 package com.example.finalproject.models
 
-class IngredientListModel (
+data class IngredientListModel (
     val ingredient: String
 )

@@ -28,15 +28,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="@string/menu_ingredients"
-        android:textSize="20sp"
+        android:text="@string/ingredient_txt"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idToolbar" />
 
     <ListView
         android:id="@+id/idIngredientLV"
         android:layout_width="match_parent"
-        android:layout_height="329dp"
+        android:layout_height="260dp"
+        android:fadeScrollbars="false"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="6dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idIngredientsTV" />
@@ -46,20 +51,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="@string/menu_prep"
-        android:textSize="20sp"
+        android:text="@string/instruction_txt"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idIngredientLV" />
 
-    <TextView
-        android:id="@+id/idInstructionStepsTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ListView
+        android:id="@+id/idInstructionsLV"
+        android:layout_width="match_parent"
+        android:layout_height="324dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="6dp"
+        android:fadeScrollbars="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idInstructionsTV" />
+        app:layout_constraintTop_toBottomOf="@+id/idInstructionsTV"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

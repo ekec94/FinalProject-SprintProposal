@@ -18,14 +18,19 @@ class RecipeListAdapter(val ctx: Context, val ourResource: Int,
         val view = layoutInflater.inflate(ourResource, null)
 
         // variables for layout views
-        val title = view.findViewById<TextView>(R.id.idRecipeName)
-        val author = view.findViewById<TextView>(R.id.idRecipeTime)
+        val name = view.findViewById<TextView>(R.id.idRecipeName)
+        val time = view.findViewById<TextView>(R.id.idRecipeTime)
         val img = view.findViewById<ImageView>(R.id.idRecipeImage)
 
         // model
-        title.text = items[position].recipeName
-        author.text = items[position].prepTime
+        name.text = items[position].recipeName
+        time.text = items[position].cookTime
         img.setImageDrawable(ctx.resources.getDrawable(items[position].img))
+        items[position].ingredients
+        items[position].ingredientAmounts
+        items[position].instructions
+        items[position].source
+        items[position].tags
 
         return view
     }

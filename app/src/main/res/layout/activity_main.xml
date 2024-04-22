@@ -25,10 +25,26 @@
 
     <ListView
         android:id="@+id/idRecipeList"
-        android:layout_width="409dp"
-        android:layout_height="628dp"
+        android:layout_width="match_parent"
+        android:layout_height="646dp"
+        android:fadeScrollbars="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idToolbar" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idFilterBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idToolbar"
+        app:srcCompat="@android:drawable/ic_menu_search"
+        android:focusable="true"
+        android:contentDescription="@string/actionBtn_txt" />
 </androidx.constraintlayout.widget.ConstraintLayout>
